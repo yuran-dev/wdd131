@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive temple album showcasing African temples with a mobile-first design, image gallery, and interactive navigation menu.">
+    <meta name="author" content="Yuran Nhangumbe">
 
-  <meta name="description" content="A responsive temple album showcasing African temples with a mobile-first design, image gallery, and interactive navigation menu.">
-  <meta name="author" content="Yuran Nhangumbe">
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Temple Album</title>
 
-  <title>Temple Album</title>
+    <!-- CSS Mobile-first -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
 
-  <!-- CSS mobile-first -->
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-
-  <!-- JavaScript -->
-  <script src="scripts/temples.js" defer></script>
+    <!-- JS -->
+    <script src="scripts/temples.js" defer></script>
 </head>
-
 <body>
-  <header class="site-header">
-    <h1>Temple Album</h1>
-    <button id="hamburger" class="hamburger">&#9776;</button>
-    <nav id="main-nav" class="navigation">
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="site-header">
+        <h1>Temple Album</h1>
+        <button id="hamburger" class="hamburger">&#9776;</button>
+        <nav id="main-nav" class="navigation">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="main-content">
-    <h2>Our Temple Collection</h2>
-    <section class="temples-grid">
-      <figure><img src="images/temple1.png" alt="Temple 1"><figcaption>Temple 1</figcaption></figure>
-      <figure><img src="images/temple2.png" alt="Temple 2"><figcaption>Temple 2</figcaption></figure>
-      <figure><img src="images/temple3.png" alt="Temple 3"><figcaption>Temple 3</figcaption></figure>
-      <figure><img src="images/temple4.png" alt="Temple 4"><figcaption>Temple 4</figcaption></figure>
-      <figure><img src="images/temple5.png" alt="Temple 5"><figcaption>Temple 5</figcaption></figure>
-      <figure><img src="images/temple6.png" alt="Temple 6"><figcaption>Temple 6</figcaption></figure>
-      <figure><img src="images/temple7.png" alt="Temple 7"><figcaption>Temple 7</figcaption></figure>
-      <figure><img src="images/temple8.png" alt="Temple 8"><figcaption>Temple 8</figcaption></figure>
-      <figure><img src="images/temple9.png" alt="Temple 9"><figcaption>Temple 9</figcaption></figure>
-    </section>
-  </main>
+    <!-- Main -->
+    <main class="main-content">
+        <h1>Our Temple Collection</h1>
+        <section class="temples-grid">
+            <figure class="temple-item">
+                <img src="images/temple1.png" alt="Temple 1">
+                <figcaption>Temple Name 1</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple2.png" alt="Temple 2">
+                <figcaption>Temple Name 2</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple3.png" alt="Temple 3">
+                <figcaption>Temple Name 3</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple4.png" alt="Temple 4">
+                <figcaption>Temple Name 4</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple5.png" alt="Temple 5">
+                <figcaption>Temple Name 5</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple6.png" alt="Temple 6">
+                <figcaption>Temple Name 6</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple7.png" alt="Temple 7">
+                <figcaption>Temple Name 7</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple8.png" alt="Temple 8">
+                <figcaption>Temple Name 8</figcaption>
+            </figure>
+            <figure class="temple-item">
+                <img src="images/temple9.png" alt="Temple 9">
+                <figcaption>Temple Name 9</figcaption>
+            </figure>
+        </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Brigham Young University-Idaho | All rights reserved</p>
-    <p>Last modified: <span id="last-modified"></span></p>
-  </footer>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Brigham Young University-Idaho | All rights reserved</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
 </body>
 </html>
