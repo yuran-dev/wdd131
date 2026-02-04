@@ -5,21 +5,21 @@ const temples = [
     location: "Newchapel, Surrey, United Kingdom",
     dedicated: "1958, September, 7",
     area: 42652,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/london-england-temple.jpg"
+    imageUrl: "images/london-england-temple-56886-main.jpg"
   },
   {
     templeName: "Tokyo Japan Temple",
     location: "Minato, Tokyo, Japan",
     dedicated: "1980, October, 27",
     area: 68381,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/tokyo-japan-temple.jpg"
+    imageUrl: "images/tokyo-japan-temple-26340-main.jpg"
   },
   {
     templeName: "Boston Massachusetts Temple",
     location: "Boston, Massachusetts, USA",
     dedicated: "2000, October, 1",
     area: 19600,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/boston-massachusetts-temple.jpg"
+    imageUrl: "images/boston-massachusetts-temple-9913-main.jpg"
   },
   {
     templeName: "Brigham City Utah Temple",
