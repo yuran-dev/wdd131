@@ -26,63 +26,63 @@ const temples = [
     location: "Brigham City, Utah, United States",
     dedicated: "2012, September, 23",
     area: 17300,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/brigham-city-utah-temple.jpg"
+    imageUrl: "images/brigham-city-utah-temple-39612-main.jpg"
   },
   {
     templeName: "Mexico City Mexico Temple",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/mexico-city-mexico-temple.jpg"
+    imageUrl: "images/mexico-city-mexico-temple-4060-main.jpg"
   },
   {
     templeName: "Accra Ghana Temple",
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 17500,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/accra-ghana-temple.jpg"
+    imageUrl: "images/accra-ghana-temple-13760-main.jpg"
   },
   {
     templeName: "Payson Utah Temple",
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/payson-utah-temple.jpg"
+    imageUrl: "images/payson-utah-temple-62834-main.jpg"
   },
   {
     templeName: "Lima Peru Temple",
     location: "Lima, Peru",
     dedicated: "1986, January, 10",
     area: 9600,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/lima-peru-temple.jpg"
+    imageUrl: "images/lima-peru-temple-12721-main.jpg"      
   },
   {
     templeName: "Washington D.C. Temple",
     location: "Kensington, Maryland, United States",
     dedicated: "1974, November, 19",
     area: 156558,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/washington-dc-temple.jpg"
+    imageUrl: "images/washington-d.c.-temple-14992-main.jpg"
   },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41000,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/rome-italy-temple.jpg"
+    imageUrl: "images/rome-italy-temple-2642-main.jpg"
   },
   {
     templeName: "Sydney Australia Temple",
     location: "Sydney, New South Wales, Australia",
     dedicated: "1984, September, 20",
     area: 14381,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/sydney-australia-temple.jpg"
+    imageUrl: "images/sydney-australia-temple-43342-main.jpg"
   },
   {
     templeName: "Johannesburg South Africa Temple",
     location: "Johannesburg, Gauteng, South Africa",
     dedicated: "1985, August, 24",
     area: 21600,
-    imageUrl: "https://www.churchofjesuschrist.org/media-library/temples/johannesburg-south-africa-temple.jpg"
+    imageUrl: "images/johannesburg-south-africa-temple-22475-main.jpg"
   }
 ];
 
