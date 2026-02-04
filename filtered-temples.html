@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive temple album showcasing 12 temples with filtering, mobile-first design, and interactive navigation.">
+    <meta name="author" content="Yuran Nhangumbe">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Filtered Temple Album</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JS -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <h1>Temple Album</h1>
+        <button id="hamburger" class="hamburger">&#9776;</button>
+        <nav id="main-nav" class="navigation">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-content">
+        <h2>Our Temple Collection</h2>
+        <section class="temples-grid" id="temples">
+            <!-- Temple cards serão gerados aqui pelo JS -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Brigham Young University-Idaho | All rights reserved</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

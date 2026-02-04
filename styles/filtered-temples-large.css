@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    /* Main mais largo */
+    .main-content {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    /* Grid 3 colunas */
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Navigation horizontal */
+    .navigation .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
