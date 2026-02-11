@@ -1,98 +1,148 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BODY ===== */
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  padding: 1rem;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-main {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-h1 {
-  text-align: center;
-  color: #efac3e;
-  margin-bottom: 1.5rem;
+/* ===== FORM CONTAINER ===== */
+form {
+    background: #1e293b;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.6s ease-in-out;
 }
 
-.form-group {
-  position: relative;
-  margin-bottom: 1.5rem;
+/* ===== FORM GROUP ===== */
+form div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.floating-label input,
-.floating-label select,
-.floating-label textarea {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
-  transition: border-color 0.3s;
+/* ===== LABELS ===== */
+label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #cbd5e1;
 }
 
-.floating-label label {
-  position: absolute;
-  left: 0.8rem;
-  top: 0.9rem;
-  color: #999;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  background: #fff;
-  padding: 0 0.3rem;
+/* ===== INPUTS ===== */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: #0f172a;
+    color: #f1f5f9;
+    transition: all 0.3s ease;
 }
 
-.floating-label input:focus + label,
-.floating-label textarea:focus + label,
-.floating-label select:focus + label,
-.floating-label.filled label {
-  top: -0.5rem;
-  font-size: 0.8rem;
-  color: #efac3e;
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
+/* ===== FOCUS EFFECT ===== */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px #38bdf8;
+    transform: scale(1.02);
+}
+
+/* ===== RADIO & CHECKBOX ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #38bdf8;
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ===== RATING GROUP ===== */
+.rating-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* ===== CHECKBOX GROUP ===== */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ===== SUBMIT BUTTON ===== */
 input[type="submit"] {
-  background: #efac3e;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background: #d9912c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
 }
 
-/* Radio and Checkbox spacing */
-fieldset {
-  margin-bottom: 1.5rem;
-}
-
-legend {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 0.3rem;
-  transform: scale(1.2);
-}
-
-/* Media Queries for Mobile */
-@media (max-width: 600px) {
-  main {
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
     padding: 1rem;
-  }
-  input[type="submit"] {
-    width: 100%;
-  }
+    margin-top: auto;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    form {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
 }
