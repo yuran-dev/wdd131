@@ -1,120 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>HydroGel Screen Protector - Contact</title>
-    <meta name="description" content="Order your HydroGel screen protector with our automatic M288 cutting machine. Fast and professional service.">
-    <meta name="author" content="Yuran Nhangumbe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
+    <meta name="description" content="Formulário de avaliação de produtos Hydrogel.">
+    <meta name="author" content="Seu Nome Aqui">
+    <title>Formulário de Avaliação de Produtos Hydrogel</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>Avaliação de Produtos Hydrogel</h1>
+    </header>
 
-<header>
-    <h1>HydroGel Screen Protector</h1>
-    <p>Precision Cut • Premium Protection • M288 Automatic Machine</p>
-</header>
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product">Produto:</label>
+            <select id="product" name="product" required>
+                <option disabled selected>Select a Product ...</option>
+            </select>
 
-<main>
-
-<section class="form-section">
-    <h2>Request Your Installation</h2>
-
-    <form method="post">
-
-        <!-- Name -->
-        <div class="form-group">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-        </div>
-
-        <!-- Email -->
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <!-- Device Model -->
-        <div class="form-group">
-            <label for="device">Device Model</label>
-            <input type="text" id="device" name="device" required>
-        </div>
-
-        <!-- Installation Date -->
-        <div class="form-group">
-            <label for="date">Preferred Installation Date</label>
-            <input type="date" id="date" name="date" required>
-        </div>
-
-        <!-- Rating Stars -->
-        <div class="form-group">
-            <label>Service Rating</label>
+            <!-- Overall Rating -->
+            <label>Avaliação Geral:</label>
             <div class="rating">
-
-                <input type="radio" id="star1" name="rating" value="1" required>
+                <input type="radio" name="rating" id="star1" value="1" required>
                 <label for="star1">★</label>
-
-                <input type="radio" id="star2" name="rating" value="2" required>
+                <input type="radio" name="rating" id="star2" value="2" required>
                 <label for="star2">★★</label>
-
-                <input type="radio" id="star3" name="rating" value="3" required>
+                <input type="radio" name="rating" id="star3" value="3" required>
                 <label for="star3">★★★</label>
-
-                <input type="radio" id="star4" name="rating" value="4" required>
+                <input type="radio" name="rating" id="star4" value="4" required>
                 <label for="star4">★★★★</label>
-
-                <input type="radio" id="star5" name="rating" value="5" required>
+                <input type="radio" name="rating" id="star5" value="5" required>
                 <label for="star5">★★★★★</label>
-
             </div>
-        </div>
 
-        <!-- Extra Features -->
-        <div class="form-group">
-            <label>Additional Features</label>
+            <!-- Date of Installation -->
+            <label for="installDate">Data de Instalação:</label>
+            <input type="date" id="installDate" name="installDate" required>
 
-            <div class="checkbox-group">
-                <input type="checkbox" id="privacy" name="features" value="privacy">
-                <label for="privacy">Privacy Protection</label>
-
-                <input type="checkbox" id="antiBlue" name="features" value="antiblue">
-                <label for="antiBlue">Anti-Blue Light</label>
-
-                <input type="checkbox" id="matte" name="features" value="matte">
-                <label for="matte">Matte Finish</label>
-
-                <input type="checkbox" id="fullCover" name="features" value="fullcover">
-                <label for="fullCover">Full Edge Cover</label>
+            <!-- Useful Features -->
+            <label>Recursos Úteis:</label>
+            <div class="features">
+                <input type="checkbox" id="feature1" name="features" value="Durabilidade">
+                <label for="feature1">Durabilidade</label>
+                <input type="checkbox" id="feature2" name="features" value="Fácil Aplicação">
+                <label for="feature2">Fácil Aplicação</label>
+                <input type="checkbox" id="feature3" name="features" value="Proteção Completa">
+                <label for="feature3">Proteção Completa</label>
+                <input type="checkbox" id="feature4" name="features" value="Preço Justo">
+                <label for="feature4">Preço Justo</label>
             </div>
-        </div>
 
-        <!-- Message -->
-        <div class="form-group">
-            <label for="message">Additional Notes</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-        </div>
+            <!-- Written Review -->
+            <label for="reviewText">Comentário:</label>
+            <textarea id="reviewText" name="reviewText"></textarea>
 
-        <!-- Submit -->
-        <div class="form-group">
-            <button type="submit">Submit Request</button>
-        </div>
+            <!-- User Name -->
+            <label for="userName">Seu Nome (opcional):</label>
+            <input type="text" id="userName" name="userName">
 
-    </form>
-</section>
+            <!-- Submit Button -->
+            <input type="submit" value="Enviar Avaliação">
+        </form>
+    </main>
 
-</main>
+    <footer>
+        <p>© 2026 Hydrogel Reviews</p>
+    </footer>
 
-<footer>
-    <p>© 2026 HydroGel Installation Service | Mahotas - Maputo</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
