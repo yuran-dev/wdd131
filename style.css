@@ -1,171 +1,135 @@
-/* === RESET === */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* === BODY === */
+/* General Page Styles */
 body {
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* === HEADER === */
-header {
-    text-align: center;
-    margin-bottom: 20px;
+header, footer {
+  background-color: #ff7f50;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
 
-header h1 {
-    color: #ff7f00; /* orange */
-    font-weight: 600;
-    font-size: 2em;
+h1 {
+  margin-bottom: 0.2em;
 }
 
-/* === MAIN FORM === */
-main {
-    flex: 1; /* make main expand to push footer down */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Form Styles */
 form {
-    background-color: #ff7f00; /* orange */
-    padding: 30px;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 500px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-form:hover {
-    transform: scale(1.02);
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: 600;
+  color: #333;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #000; /* black text */
-}
-
-form input[type="text"],
-form input[type="date"],
-form select,
-form textarea {
-    width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1em;
-    transition: all 0.3s ease;
-}
-
-form input[type="text"]:focus,
-form input[type="date"]:focus,
-form select:focus,
-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(255,127,0,0.7);
-}
-
-/* === SUBMIT BUTTON === */
-form input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background-color: #fff;
-    color: #ff7f00;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s, transform 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #ff9f3e;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* === CHECKBOXES AND RADIO === */
-.features,
-.rating {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.features input[type="checkbox"],
-.rating input[type="radio"] {
-    display: none;
-}
-
-.features label,
-.rating label {
-    background-color: #fff;
-    color: #ff7f00;
-    padding: 10px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    flex: 1;
-    text-align: center;
-}
-
-.features label:hover,
-.rating label:hover {
-    background-color: #ff9f3e;
-    color: #fff;
-}
-
-/* === RATING STARS === */
-.rating label {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.rating input[type="radio"]:checked + label {
-    background-color: #fff;
-    color: #ff7f00;
-    box-shadow: 0 0 10px rgba(255,127,0,0.7);
-}
-
-/* === TEXTAREA === */
+input[type="text"],
+input[type="date"],
+select,
 textarea {
-    resize: vertical;
-    min-height: 80px;
+  width: 100%;
+  padding: 0.6em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* === FOOTER === */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px rgba(255,127,80,0.5);
+  outline: none;
+}
+
+/* Radio Button / Stars */
+.rating-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+
+.rating-container input[type="radio"] {
+  display: none;
+}
+
+.star-label {
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: #fff3e0;
+  color: #ff7f50;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.star-label:hover,
+.star-label:hover ~ .star-label,
+.rating-container input[type="radio"]:checked + .star-label {
+  background-color: #ff7f50;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  margin-right: 0.5em;
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+input[type="submit"] {
+  margin-top: 1.5em;
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff7f50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6333;
+  transform: translateY(-2px);
+}
+
+/* Footer Fixed at Bottom */
 footer {
-    text-align: center;
-    margin-top: auto; /* push footer to bottom */
-    padding: 15px;
-    font-size: 0.9em;
-    color: #555;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 3em;
+  padding: 1em 0;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 600px) {
-    form {
-        padding: 20px;
-    }
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 1em;
+    margin: 1em;
+  }
 
-    .features label,
-    .rating label {
-        font-size: 0.9em;
-        padding: 6px 10px;
-    }
+  .rating-container {
+    flex-direction: column;
+  }
 }

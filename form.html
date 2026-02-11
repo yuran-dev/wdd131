@@ -1,75 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de avaliação de produtos Hydrogel.">
-    <meta name="author" content="Seu Nome Aqui">
-    <title>Formulário de Avaliação de Produtos Hydrogel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogel Product Review Form</title>
+  <meta name="description" content="Submit your Hydrogel product review with ease. Select a product, rate it with stars, share your experience, and help others choose the best product.">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Avaliação de Produtos Hydrogel</h1>
-    </header>
 
-    <main>
-        <form id="reviewForm" action="review.html" method="get">
-            <!-- Product Name -->
-            <label for="product">Produto:</label>
-            <select id="product" name="product" required>
-                <option disabled selected>Select a Product ...</option>
-            </select>
+<header>
+  <h1>Hydrogel Product Review Form</h1>
+  <p>Help us improve by sharing your experience with our Hydrogel products!</p>
+</header>
 
-            <!-- Overall Rating -->
-            <label>Avaliação Geral:</label>
-            <div class="rating">
-                <input type="radio" name="rating" id="star1" value="1" required>
-                <label for="star1">★</label>
-                <input type="radio" name="rating" id="star2" value="2" required>
-                <label for="star2">★★</label>
-                <input type="radio" name="rating" id="star3" value="3" required>
-                <label for="star3">★★★</label>
-                <input type="radio" name="rating" id="star4" value="4" required>
-                <label for="star4">★★★★</label>
-                <input type="radio" name="rating" id="star5" value="5" required>
-                <label for="star5">★★★★★</label>
-            </div>
+<form id="reviewForm" method="get" action="review.html">
+  <!-- Product Name -->
+  <label for="product">Select a Product:</label>
+  <select id="product" name="product" required>
+    <option disabled selected>Select a Product ...</option>
+  </select>
 
-            <!-- Date of Installation -->
-            <label for="installDate">Data de Instalação:</label>
-            <input type="date" id="installDate" name="installDate" required>
+  <!-- Overall Rating -->
+  <fieldset>
+    <legend>Overall Rating:</legend>
+    <div class="rating-container">
+      <label for="star1" class="star-label">☆</label>
+      <input type="radio" id="star1" name="rating" value="1" required>
+      
+      <label for="star2" class="star-label">☆☆</label>
+      <input type="radio" id="star2" name="rating" value="2" required>
+      
+      <label for="star3" class="star-label">☆☆☆</label>
+      <input type="radio" id="star3" name="rating" value="3" required>
+      
+      <label for="star4" class="star-label">☆☆☆☆</label>
+      <input type="radio" id="star4" name="rating" value="4" required>
+      
+      <label for="star5" class="star-label">☆☆☆☆☆</label>
+      <input type="radio" id="star5" name="rating" value="5" required>
+    </div>
+  </fieldset>
 
-            <!-- Useful Features -->
-            <label>Recursos Úteis:</label>
-            <div class="features">
-                <input type="checkbox" id="feature1" name="features" value="Durabilidade">
-                <label for="feature1">Durabilidade</label>
-                <input type="checkbox" id="feature2" name="features" value="Fácil Aplicação">
-                <label for="feature2">Fácil Aplicação</label>
-                <input type="checkbox" id="feature3" name="features" value="Proteção Completa">
-                <label for="feature3">Proteção Completa</label>
-                <input type="checkbox" id="feature4" name="features" value="Preço Justo">
-                <label for="feature4">Preço Justo</label>
-            </div>
+  <!-- Date of Installation -->
+  <label for="installation">Date of Installation:</label>
+  <input type="date" id="installation" name="installation" required>
 
-            <!-- Written Review -->
-            <label for="reviewText">Comentário:</label>
-            <textarea id="reviewText" name="reviewText"></textarea>
+  <!-- Useful Features -->
+  <fieldset>
+    <legend>Useful Features:</legend>
+    <label><input type="checkbox" id="feature1" name="features" value="feature1"> Feature 1</label>
+    <label><input type="checkbox" id="feature2" name="features" value="feature2"> Feature 2</label>
+    <label><input type="checkbox" id="feature3" name="features" value="feature3"> Feature 3</label>
+    <label><input type="checkbox" id="feature4" name="features" value="feature4"> Feature 4</label>
+  </fieldset>
 
-            <!-- User Name -->
-            <label for="userName">Seu Nome (opcional):</label>
-            <input type="text" id="userName" name="userName">
+  <!-- Written Review -->
+  <label for="review">Written Review:</label>
+  <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
 
-            <!-- Submit Button -->
-            <input type="submit" value="Enviar Avaliação">
-        </form>
-    </main>
+  <!-- User Name -->
+  <label for="username">Your Name (optional):</label>
+  <input type="text" id="username" name="username" placeholder="Enter your name">
 
-    <footer>
-        <p>© 2026 Hydrogel Reviews</p>
-    </footer>
+  <!-- Submit Button -->
+  <input type="submit" value="Submit Review">
+</form>
 
-    <script src="script.js"></script>
+<footer>
+  <p>&copy; 2026 Hydrogel Products. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
