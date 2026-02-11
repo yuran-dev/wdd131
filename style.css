@@ -1,4 +1,4 @@
-/* === RESET BÁSICO === */
+/* === RESET === */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,8 +11,7 @@ body {
     background-color: #fff;
     color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     padding: 20px;
 }
@@ -24,14 +23,21 @@ header {
 }
 
 header h1 {
-    color: #ff7f00; /* laranja */
+    color: #ff7f00; /* orange */
     font-weight: 600;
     font-size: 2em;
 }
 
-/* === FORMULÁRIO === */
+/* === MAIN FORM === */
+main {
+    flex: 1; /* make main expand to push footer down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
-    background-color: #ff7f00; /* laranja */
+    background-color: #ff7f00; /* orange */
     padding: 30px;
     border-radius: 15px;
     width: 100%;
@@ -48,6 +54,7 @@ form label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
+    color: #000; /* black text */
 }
 
 form input[type="text"],
@@ -91,7 +98,7 @@ form input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
-/* === CHECKBOXES E RADIO === */
+/* === CHECKBOXES AND RADIO === */
 .features,
 .rating {
     display: flex;
@@ -109,7 +116,7 @@ form input[type="submit"]:hover {
 .rating label {
     background-color: #fff;
     color: #ff7f00;
-    padding: 8px 12px;
+    padding: 10px 12px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -123,13 +130,12 @@ form input[type="submit"]:hover {
     color: #fff;
 }
 
-/* === RATING ESTRELAS === */
+/* === RATING STARS === */
 .rating label {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-/* Checked effect */
 .rating input[type="radio"]:checked + label {
     background-color: #fff;
     color: #ff7f00;
@@ -145,12 +151,13 @@ textarea {
 /* === FOOTER === */
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto; /* push footer to bottom */
+    padding: 15px;
     font-size: 0.9em;
     color: #555;
 }
 
-/* === RESPONSIVO === */
+/* === RESPONSIVE === */
 @media (max-width: 600px) {
     form {
         padding: 20px;
