@@ -1,103 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Submit a product review including rating, features, and installation date.">
-  <meta name="author" content="Yuran Nhangumbe">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>HydroGel Screen Protector - Contact</title>
+    <meta name="description" content="Order your HydroGel screen protector with our automatic M288 cutting machine. Fast and professional service.">
+    <meta name="author" content="Yuran Nhangumbe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Product Review Form</h1>
+    <h1>HydroGel Screen Protector</h1>
+    <p>Precision Cut • Premium Protection • M288 Automatic Machine</p>
 </header>
 
 <main>
-  <form method="get" action="review.html">
 
-    <!-- Product Name -->
-    <div class="form-group">
-      <label for="product">Product Name</label>
-      <select id="product" name="product" required>
-        <option value="" disabled selected>Select a Product ...</option>
-      </select>
-    </div>
+<section class="form-section">
+    <h2>Request Your Installation</h2>
 
-    <!-- Rating -->
-    <fieldset>
-      <legend>Overall Rating</legend>
+    <form method="post">
 
-      <input type="radio" id="star1" name="rating" value="1" required>
-      <label for="star1">1</label>
+        <!-- Name -->
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
 
-      <input type="radio" id="star2" name="rating" value="2" required>
-      <label for="star2">2</label>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-      <input type="radio" id="star3" name="rating" value="3" required>
-      <label for="star3">3</label>
+        <!-- Device Model -->
+        <div class="form-group">
+            <label for="device">Device Model</label>
+            <input type="text" id="device" name="device" required>
+        </div>
 
-      <input type="radio" id="star4" name="rating" value="4" required>
-      <label for="star4">4</label>
+        <!-- Installation Date -->
+        <div class="form-group">
+            <label for="date">Preferred Installation Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
 
-      <input type="radio" id="star5" name="rating" value="5" required>
-      <label for="star5">5</label>
+        <!-- Rating Stars -->
+        <div class="form-group">
+            <label>Service Rating</label>
+            <div class="rating">
 
-    </fieldset>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">★</label>
 
-    <!-- Date -->
-    <div class="form-group">
-      <label for="installDate">Date of Installation</label>
-      <input type="date" id="installDate" name="installDate" required>
-    </div>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">★★</label>
 
-    <!-- Features -->
-    <fieldset>
-      <legend>Useful Features</legend>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">★★★</label>
 
-      <input type="checkbox" id="feature1" name="features" value="Durable">
-      <label for="feature1">Durable</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">★★★★</label>
 
-      <input type="checkbox" id="feature2" name="features" value="Easy Install">
-      <label for="feature2">Easy Installation</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★★★★★</label>
 
-      <input type="checkbox" id="feature3" name="features" value="Affordable">
-      <label for="feature3">Affordable</label>
+            </div>
+        </div>
 
-      <input type="checkbox" id="feature4" name="features" value="High Quality">
-      <label for="feature4">High Quality</label>
+        <!-- Extra Features -->
+        <div class="form-group">
+            <label>Additional Features</label>
 
-    </fieldset>
+            <div class="checkbox-group">
+                <input type="checkbox" id="privacy" name="features" value="privacy">
+                <label for="privacy">Privacy Protection</label>
 
-    <!-- Written Review -->
-    <div class="form-group">
-      <label for="review">Written Review</label>
-      <textarea id="review" name="review" rows="4"></textarea>
-    </div>
+                <input type="checkbox" id="antiBlue" name="features" value="antiblue">
+                <label for="antiBlue">Anti-Blue Light</label>
 
-    <!-- Username -->
-    <div class="form-group">
-      <label for="username">Your Name</label>
-      <input type="text" id="username" name="username">
-    </div>
+                <input type="checkbox" id="matte" name="features" value="matte">
+                <label for="matte">Matte Finish</label>
 
-    <!-- Submit -->
-    <div class="form-group">
-      <input type="submit" value="Submit Review">
-    </div>
+                <input type="checkbox" id="fullCover" name="features" value="fullcover">
+                <label for="fullCover">Full Edge Cover</label>
+            </div>
+        </div>
 
-  </form>
+        <!-- Message -->
+        <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+            <button type="submit">Submit Request</button>
+        </div>
+
+    </form>
+</section>
+
 </main>
 
 <footer>
-  <p>&copy; 2026 Yuran Nhangumbe | WDD131</p>
-  <p id="lastModified"></p>
+    <p>© 2026 HydroGel Installation Service | Mahotas - Maputo</p>
 </footer>
 
 <script src="script.js"></script>
-
 
 </body>
 </html>
