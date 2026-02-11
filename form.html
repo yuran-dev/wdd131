@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a product review for our hydrogel film products.">
+  <meta name="author" content="Yuran Nhangumbe">
+  <title>Hydrogel Film Product Review</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Hydrogel Film Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get" id="reviewForm">
+      <!-- Product Name -->
+      <div class="form-group">
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <!-- Overall Rating -->
+      <fieldset class="rating">
+        <legend>Overall Rating:</legend>
+        <label class="star"><input type="radio" name="rating" value="1" required>☆</label>
+        <label class="star"><input type="radio" name="rating" value="2">☆</label>
+        <label class="star"><input type="radio" name="rating" value="3">☆</label>
+        <label class="star"><input type="radio" name="rating" value="4">☆</label>
+        <label class="star"><input type="radio" name="rating" value="5">☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <div class="form-group">
+        <label for="date">Date of Installation:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features:</legend>
+        <label><input type="checkbox" name="features" value="Easy Application"> Easy Application</label>
+        <label><input type="checkbox" name="features" value="Durable"> Durable</label>
+        <label><input type="checkbox" name="features" value="Scratch Resistant"> Scratch Resistant</label>
+        <label><input type="checkbox" name="features" value="Clear Finish"> Clear Finish</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <div class="form-group">
+        <label for="review">Written Review (optional):</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+      </div>
+
+      <!-- User Name -->
+      <div class="form-group">
+        <label for="username">Your Name (optional):</label>
+        <input type="text" id="username" name="username">
+      </div>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review" class="btn">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hydrogel Films</p>
+  </footer>
+</body>
+</html>
